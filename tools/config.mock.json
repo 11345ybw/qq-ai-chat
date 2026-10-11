@@ -1,0 +1,52 @@
+{
+  "_说明": "本地无 QQ 验证用的配置：假模型(19999) + 假 NapCat(19300) + 本程序(18787)。用法见 README 的『本地跑通』。",
+  "onebot": {
+    "mode": "http",
+    "http": { "listenHost": "127.0.0.1", "listenPort": 18787, "path": "/onebot", "accessToken": "mock-report-token" },
+    "api": { "baseUrl": "http://127.0.0.1:19300", "accessToken": "mock-api-token", "timeoutSeconds": 5 },
+    "selfQQ": null,
+    "chatType": "private",
+    "acceptFriendRequest": true
+  },
+  "ai": {
+    "baseUrl": "http://127.0.0.1:19999",
+    "model": "mock-model",
+    "apiKey": "sk-mock",
+    "temperature": 1.1,
+    "maxTokens": 500,
+    "timeoutSeconds": 20,
+    "jsonMode": true,
+    "retries": 0
+  },
+  "reply": {
+    "maxContextMessages": 20,
+    "maxContextChars": 4000,
+    "maxBubbles": 3,
+    "maxBubbleChars": 60,
+    "typingMsPerChar": 10,
+    "maxTypingDelayMs": 300,
+    "minBubbleGapMs": 200,
+    "cooldownSeconds": 0
+  },
+  "proactive": {
+    "enabled": true,
+    "idleSeconds": 10,
+    "jitterPercent": 0,
+    "onlyAfterUserMessage": true,
+    "quietHours": null,
+    "maxConsecutive": 3,
+    "stopAfterMax": true,
+    "backoffMultiplier": 2,
+    "maxIdleSeconds": 60,
+    "checkIntervalSeconds": 2,
+    "minSecondsBetweenAnyMessage": 1
+  },
+  "target": { "qq": null },
+  "paths": {
+    "dataDir": ".tmp-mock/data",
+    "logsDir": ".tmp-mock/logs",
+    "personaFile": "persona.md",
+    "topicsFile": "topics.md"
+  },
+  "logging": { "level": "debug", "console": true }
+}

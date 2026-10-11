@@ -1,0 +1,19 @@
+{
+  "name": "qq-ai-chat",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "description": "Chat with an AI character on QQ: she replies, and she messages you first when you go quiet",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "scripts": {
+    "start": "node src/index.mjs",
+    "check": "node src/index.mjs --check",
+    "ai-test": "node src/index.mjs --ai-test",
+    "test": "node --test",
+    "mock-napcat": "node tools/mock-onebot-http.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

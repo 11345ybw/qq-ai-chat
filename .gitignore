@@ -1,0 +1,23 @@
+# 运行时产物
+data/
+logs/
+.tmp-mock/
+
+# 本机配置与密钥（不要提交）
+config.json
+secrets.json
+
+# 便携运行环境
+.runtime/
+node_modules/
+
+# 系统垃圾
+Thumbs.db
+desktop.ini
+.DS_Store
+*.log
+*.tmp
+
+# NapCat 启动器可能产生的临时文件
+loadNapCat.js
+qqnt.json

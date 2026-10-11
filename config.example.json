@@ -1,0 +1,70 @@
+{
+  "onebot": {
+    "mode": "http",
+    "http": {
+      "listenHost": "127.0.0.1",
+      "listenPort": 8787,
+      "path": "/onebot",
+      "accessToken": "change-me-please"
+    },
+    "api": {
+      "baseUrl": "http://127.0.0.1:3000",
+      "accessToken": "change-me-please",
+      "timeoutSeconds": 15
+    },
+    "ws": {
+      "url": "ws://127.0.0.1:3000",
+      "accessToken": "change-me-please",
+      "reconnectSeconds": 5
+    },
+    "selfQQ": null,
+    "chatType": "private",
+    "acceptFriendRequest": true
+  },
+  "ai": {
+    "baseUrl": "https://api.deepseek.com",
+    "model": "deepseek-flash",
+    "temperature": 1.1,
+    "maxTokens": 700,
+    "timeoutSeconds": 60,
+    "jsonMode": true,
+    "retries": 2
+  },
+  "reply": {
+    "maxContextMessages": 30,
+    "maxContextChars": 6000,
+    "maxBubbles": 3,
+    "maxBubbleChars": 60,
+    "typingMsPerChar": 45,
+    "maxTypingDelayMs": 1800,
+    "minBubbleGapMs": 350,
+    "cooldownSeconds": 2
+  },
+  "proactive": {
+    "enabled": true,
+    "idleSeconds": 300,
+    "jitterPercent": 15,
+    "onlyAfterUserMessage": true,
+    "quietHours": ["23:30", "07:30"],
+    "maxConsecutive": 3,
+    "stopAfterMax": true,
+    "backoffMultiplier": 1.6,
+    "maxIdleSeconds": 1800,
+    "checkIntervalSeconds": 20,
+    "minSecondsBetweenAnyMessage": 45
+  },
+  "target": {
+    "qq": null,
+    "name": null
+  },
+  "paths": {
+    "dataDir": "data",
+    "logsDir": "logs",
+    "personaFile": "persona.md",
+    "topicsFile": "topics.md"
+  },
+  "logging": {
+    "level": "info",
+    "console": true
+  }
+}
